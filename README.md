@@ -1,7 +1,6 @@
-# Documentación exclusiva para Laboratorio Azul
+# Documentación exclusiva para Sakote Express
 
-Esta documentación describe el funcionamiento de la herramienta para uso exclusivo de Laboratorio Azul, que permite
-migrar los datos hacia la aplicación Web de clientes.
+Esta documentación describe el funcionamiento de la herramienta para uso exclusivo de Sakote Express, que permite importar los productos a la tienda Web.
 
 ---
 
