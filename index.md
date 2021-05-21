@@ -61,7 +61,7 @@ erp2wc probar
 
 | Opción | Descripción |
 |-------:|-------------|
-|`--origen <nombre>`|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en `consultas` dentro del archivo `config.json`.|
+|**--origen&nbsp;<nombre>**|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en **consultas** dentro del archivo **config.json**.|
 
 > Importación
 
@@ -75,13 +75,13 @@ erp2wc importar
 
 | Opción | Descripción |
 |-------:|-------------|
-|`--origen <nombre>`|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en `consultas` dentro del archivo `config.json`.|
-|`--ttl <segundos>`|Define el tiempo de espera en segundos ante cualquier consulta **HTTP** realizada. El valor de `<segundos>` reemplazará al definido en `http.espera` en el archivo `config.json`.|
-|`--solo-nuevos`|Establece que solo se registrarán aquellos productos que aún no existan en la tienda Web, ignorando cualquier modificación de productos ya existentes.|
-|`--solo-existentes`|Establece que solo se actualizán los productos existentes en la tienda Web.|
-|`--nocache`|Deshabilita la cache utilizada para determinar si los productos han sido modificados desde la última actualización. No recomendado.|
-|`--ro`|Realiza solo las consultas "**read only**". Puede utilizarse para probar el proceso sin actualizar los productos en la Web.|
-|`-v`|Muestra más información durante el proceso de importación.|
+|**--origen&nbsp;<nombre>**|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en **consultas** dentro del archivo **config.json**.|
+|**--ttl&nbsp;<segundos>**|Define el tiempo de espera en segundos ante cualquier consulta *HTTP* realizada. El valor de `<segundos>` reemplazará al definido en **http.espera** en el archivo **config.json**.|
+|**--solo-nuevos**|Establece que solo se registrarán aquellos productos que aún no existan en la tienda Web, ignorando cualquier modificación de productos ya existentes.|
+|**--solo-existentes**|Establece que solo se actualizán los productos existentes en la tienda Web.|
+|**--nocache**|Deshabilita la cache utilizada para determinar si los productos han sido modificados desde la última actualización. No recomendado.|
+|**--ro**|Realiza solo las consultas "**read only**". Puede utilizarse para probar el proceso sin actualizar los productos en la Web.|
+|**-v**|Muestra más información durante el proceso de importación.|
 
 \* Las opciones encerradas entre corchetes ([]) son opcionales.
 
