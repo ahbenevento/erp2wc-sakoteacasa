@@ -1,4 +1,5 @@
 theme: jekyll-theme-leap-day
-title: "Importación de datos para aplicación Web"
+title: "Importación de productos hacia la tienda Web"
+show_downloads: false
 github:
   is_project_page: false
