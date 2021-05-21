@@ -46,20 +46,24 @@ Cada consulta debe estar definida con su nombre dentro de la configuración `con
 
 La herramienta puede utilizarse de dos formas:
 
+> Pruebas de conexión
+
 ```
 erp2wc probar
     [--origen <nombre>]
 ```
 
-> Pruebas de conexión
-
 **Permite realizar una prueba de conexión** local a la base de datos y a la API de la tienda Web. Debería utilizarse una vez realizada la instalación, y cuando la configuración del equipo o la red cambien.
+
+\* Las opciones encerradas entre corchetes ([]) son opcionales.
 
 ### Opciones
 
 | Opción | Descripción |
 |-------:|-------------|
-|`--origen <nombre>`|Permite indicar una consulta para comprobar la conexión local con la base de datos. `<nombre>` contiene el identificador de la consulta definida en el archivo `config.json`, sección `consultas`.|
+|`--origen <nombre>`|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en `consultas` dentro del archivo `config.json`.|
+
+> Importación
 
 ```
 erp2wc importar
@@ -69,17 +73,17 @@ erp2wc importar
     [--ro] [-v]
 ```
 
-> Importación
-
 | Opción | Descripción |
 |-------:|-------------|
-|`--origen <nombre>`|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en el archivo `config.json`, sección `consultas`.|
-|`--ttl <segundos>`|Permite definir la cantidad máxima en segundos a esperar ante cualquier consulta **HTTP** realizada. Si este parámetro es definido el valor de `<segundos>` reemplazará al definido en el archivo `config.json`, sección `http.espera`.|
-|`--solo-nuevos`|Solo registrará aquellos productos que aún no existan en la tienda Web, ignorando cualquier modificación de productos ya existentes.|
-|`--solo-existentes`|Solo actualiza los productos existentes en la tienda Web.|
-|`--nocache`|Deshabilita la cache utilizada para determinar si los productos han sido modificados desde la última actualización.|
+|`--origen <nombre>`|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en `consultas` dentro del archivo `config.json`.|
+|`--ttl <segundos>`|Define el tiempo de espera en segundos ante cualquier consulta **HTTP** realizada. El valor de `<segundos>` reemplazará al definido en `http.espera` en el archivo `config.json`.|
+|`--solo-nuevos`|Establece que solo se registrarán aquellos productos que aún no existan en la tienda Web, ignorando cualquier modificación de productos ya existentes.|
+|`--solo-existentes`|Establece que solo se actualizán los productos existentes en la tienda Web.|
+|`--nocache`|Deshabilita la cache utilizada para determinar si los productos han sido modificados desde la última actualización. No recomendado.|
 |`--ro`|Realiza solo las consultas "**read only**". Puede utilizarse para probar el proceso sin actualizar los productos en la Web.|
 |`-v`|Muestra más información durante el proceso de importación.|
+
+\* Las opciones encerradas entre corchetes ([]) son opcionales.
 
 ---
 
