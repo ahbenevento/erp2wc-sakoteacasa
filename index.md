@@ -8,6 +8,8 @@ Descargue el archivo `.zip` con la última versión y descomprímala en la carpe
 
 Esta herramienta de importación es una aplicación de consola por lo que es aconsejable abrir una terminal para realizar las primeras pruebas.
 
+---
+
 ## Configuración
 
 En la carpeta donde ha sido instalada la herramienta encontrará un archivo llamado `config.json`. El mismo contiene toda la configuración para el proceso de importación de productos.
@@ -41,6 +43,8 @@ Cada consulta debe estar definida con su nombre dentro de la configuración `con
 |`desde_fecha`|La fecha de actualizacón de productos mínima a tener en cuenta (en formato: **AAAAMMDD**).|
 |`id_deposito`|El código del depósito utilizado para obtener el stock de los productos.|
 |`id_lista_precios`|El código de la lista de precios utilizada.|
+
+---
 
 ## Modo de uso
 
