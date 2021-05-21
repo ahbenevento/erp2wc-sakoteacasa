@@ -75,7 +75,7 @@ erp2wc importar
 
 | Opción | Descripción |
 |-------:|-------------|
-|**--origen&nbsp;&lt;nombre&gt;**|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en **consultas** dentro del archivo **config.json**.|
+|**&#45;&#45;origen&nbsp;&lt;nombre&gt;**|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en **consultas** dentro del archivo **config.json**.|
 |**--ttl&nbsp;&lt;segundos&gt;**|Define el tiempo de espera en segundos ante cualquier consulta *HTTP* realizada. El valor de `<segundos>` reemplazará al definido en **http.espera** en el archivo **config.json**.|
 |**--solo-nuevos**|Establece que solo se registrarán aquellos productos que aún no existan en la tienda Web, ignorando cualquier modificación de productos ya existentes.|
 |**--solo-existentes**|Establece que solo se actualizán los productos existentes en la tienda Web.|
