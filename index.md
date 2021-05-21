@@ -26,7 +26,7 @@ En la carpeta donde ha sido instalada la herramienta encontrará un archivo llam
 |`http.espera`|Permite definir la cantidad máxima en segundos a esperar ante cualquier consulta **HTTP** realizada.|
 |`wc.sin_categoria`|Permite definir el alias utilizado para indicar que los productos no cuentan con una categoría definida.|
 |`wc.api.paginado`|Permite definir la cantidad de productos a obtener en cada consulta. El valor máximo es: **100**.|
-|`wc.api.max_consultas_individuales`|Define la cantidad máxima de productos que podrían consultarse de forma individual, es decir sin realizar consultas mediante paginado para verificar el estado de cada uno. Si se establece en **0** será calculado teniendo en cuenta la cantidad máxima de productos alcanzados en la importación, y dividiéndola por la cantidad de productos por página (`wc.api.paginado`).|
+|`wc.api.max_consultas_individuales`|Define la cantidad máxima de productos que podrían consultarse de forma individual, y no mediante el consultas masivas. Si se establece en **0** se calculará el valor automáticamente.|
 
 #### Cómo definir consultas
 
@@ -38,7 +38,7 @@ Cada consulta debe estar definida con su nombre dentro de la configuración `con
 |`activo`|Permite indicar mediante los valores **true** o **false**, si la consulta se encuentra activa. La primera consulta activa que se encuentre definida será la predeterminada.|
 |`no_probar`|Defina con **true** o **false**, si la configuración puede utilizarse o no durante una prueba de conexión.|
 |`obj`|El nombre de la tabla, vista o *stored procedure* utilizado para obtener la lista de productos.|
-|`desde_fecha`|La fecha de actualizacón de productos mínima a tener en cuenta (en formato: **AAAA-MM-DD**).|
+|`desde_fecha`|La fecha de actualizacón de productos mínima a tener en cuenta (en formato: **AAAAMMDD**).|
 |`id_deposito`|El código del depósito utilizado para obtener el stock de los productos.|
 |`id_lista_precios`|El código de la lista de precios utilizada.|
 
