@@ -17,10 +17,10 @@ En la carpeta donde ha sido instalada la herramienta encontrará un archivo llam
 | Opción | Descripción |
 |--------|-------------|
 |`uri_estado`|Contiene la dirección al servicio encargado de brindar cierta información sensible como los accesos a la base de datos, etc. **No se podrá realizar ninguna importación si esta configuración no se establece correctamente.**|
-|`log.carpeta`|Permite definir el directorio donde se guardarán los archivos `.log` con los resultados de cada importación realizada. El símbolo `$` será reemplazado por la carpeta donde la herramienta ha sido instalada.|
+|`log.carpeta`|Permite definir el directorio donde se guardarán los archivos `.log` con los resultados de cada importación realizada. Un punto (.) inicial equivale a la carpeta donde la herramienta ha sido instalada.|
 |`log.backup`|Permite indicar la cantidad de días que los archivos `.log` serán guardados.|
-|`cache.repositorio`|Permite definir la carpeta donde funcionará la cache de productos locales. El símbolo `$` será reemplazado por la carpeta donde la herramienta ha sido instalada.|
-|`acceso_local.driver`|Define el driver utilizado para conectarse a la base de datos local. Por el momento el valor soportado es: `sqlserver`.|
+|`cache.repositorio`|Permite definir la carpeta donde funcionará la cache de productos locales. Un punto (.) inicial equivale a la carpeta donde la herramienta ha sido instalada.|
+|`acceso_local.driver`|Define el driver utilizado para conectarse a la base de datos local. Por el momento el valor soportado es: **sqlserver**.|
 |`acceso_local.dsn`|Permite definir información extra en la ruta **DSN** utilizada para conectarse con la base de datos local. Por ejemplo: `server` para indicar la IP del servidor.|
 |`consultas`|Contiene al menos una consulta (activa) utilizada para obtener la lista de productos desde la base de datos local. Consulte más abajo para conocer cómo configurar estas consultas.|
 |`http.espera`|Permite definir la cantidad máxima en segundos a esperar ante cualquier consulta **HTTP** realizada.|
@@ -55,13 +55,11 @@ erp2wc probar
 
 Permite realizar una prueba de conexión local a la base de datos y a la API de la tienda Web. Debería utilizarse una vez realizada la instalación, y cuando la configuración del equipo o la red cambien.
 
-\* Las opciones encerradas entre corchetes ([]) son opcionales.
-
-#### Opciones
-
 | Opción | Descripción |
-|-------:|-------------|
+|--------|-------------|
 |<span style="white-space: nowrap;">**--origen &lt;nombre&gt;**</span>|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en **consultas** dentro del archivo **config.json**.|
+
+\* Las opciones encerradas entre corchetes ([]) son opcionales.
 
 ### Importación
 
@@ -75,12 +73,8 @@ erp2wc importar
 
 Realiza la importación de productos nuevos y existentes a la tienda Web. La lista de productos alcanzados así como también el stock y precio de los mismos dependenrá siempre del origen definido.
 
-\* Las opciones encerradas entre corchetes ([]) son opcionales.
-
-#### Opciones
-
 | Opción | Descripción |
-|-------:|-------------|
+|--------|-------------|
 |<span style="white-space: nowrap;">**--origen &lt;nombre&gt;**</span>|Define la consulta utilizada para obtener la lista de productos desde la base de datos local. `<nombre>` contiene el identificador de la consulta definida en **consultas** dentro del archivo **config.json**.|
 |**--ttl &lt;segundos&gt;**|Define el tiempo de espera en segundos ante cualquier consulta *HTTP* realizada. El valor de `<segundos>` reemplazará al definido en **http.espera** en el archivo **config.json**.|
 |**--solo-nuevos**|Establece que solo se registrarán aquellos productos que aún no existan en la tienda Web, ignorando cualquier modificación de productos ya existentes.|
@@ -88,6 +82,8 @@ Realiza la importación de productos nuevos y existentes a la tienda Web. La lis
 |**--nocache**|Deshabilita la cache utilizada para determinar si los productos han sido modificados desde la última actualización. No recomendado.|
 |**--ro**|Realiza solo las consultas "**read only**". Puede utilizarse para probar el proceso sin actualizar los productos en la Web.|
 |**-v**|Muestra más información durante el proceso de importación.|
+
+\* Las opciones encerradas entre corchetes ([]) son opcionales.
 
 ---
 
