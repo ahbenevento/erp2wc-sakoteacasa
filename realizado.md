@@ -2,6 +2,17 @@
 
 > Según la versión publicada.
 
+#### Versión 1.1.0
+
+> **04/06/21**
+
+1.  Al importar nuevos productos se marcan para no reservarse en ninguna venta.
+2.  Los códigos de barra de los productos obtenidos desde la base de datos local son normalizados antes de importarse.
+
+---
+
+<small>
+
 #### Versión 1.0.0
 
 > **28/05/21**
@@ -11,7 +22,4 @@
 3.  Gestiona una cache local de productos para acelerar la importación diaria.
 4.  Por cada producto, controla si realmente los datos han sido modificados para determinar si es necesaria su actualización.
 
----
-
-<small>
 </small>
