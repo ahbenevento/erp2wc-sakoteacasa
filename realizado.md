@@ -2,16 +2,23 @@
 
 > Según la versión publicada.
 
+#### Versión 1.1.1
+
+> **05/06/21**
+
+1.  Es posible comentar la razón por la que un producto es ignorado según su SKU.
+2.  Durante una importación el ERRORLEVEL retornado por la aplicación será `100` si al menos el proceso alcanzó un producto modificado o registrado.
+
+---
+
+<small>
+
 #### Versión 1.1.0
 
 > **04/06/21**
 
 1.  Al importar nuevos productos se marcan para no reservarse en ninguna venta.
 2.  Los códigos de barra de los productos obtenidos desde la base de datos local son normalizados antes de importarse.
-
----
-
-<small>
 
 #### Versión 1.0.0
 
