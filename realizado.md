@@ -2,16 +2,22 @@
 
 > Según la versión publicada.
 
+#### Versión 1.1.2
+
+> **10/06/21**
+
+1.  Los SKU de los productos son ignorados. En su reemplazo se utiliza el ID interno del ERP como código de búsqueda en la tienda Web.
+
+---
+
+<small>
+
 #### Versión 1.1.1
 
 > **05/06/21**
 
 1.  Es posible comentar la razón por la que un producto es ignorado según su SKU.
 2.  Durante una importación el ERRORLEVEL retornado por la aplicación será `100` si al menos el proceso alcanzó un producto modificado o registrado.
-
----
-
-<small>
 
 #### Versión 1.1.0
 
