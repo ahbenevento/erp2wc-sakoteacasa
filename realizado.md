@@ -2,15 +2,21 @@
 
 > Según la versión publicada.
 
+#### Versión 1.1.3
+
+> **10/06/21**
+
+1.  En aquellos productos con stock menor a 0 se establece su cantidad en 0, pero el producto no pasa a borrador.
+
+---
+
+<small>
+
 #### Versión 1.1.2
 
 > **10/06/21**
 
 1.  Los SKU de los productos son ignorados. En su reemplazo se utiliza el ID interno del ERP como código de búsqueda en la tienda Web.
-
----
-
-<small>
 
 #### Versión 1.1.1
 
