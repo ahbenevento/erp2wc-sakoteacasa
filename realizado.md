@@ -2,15 +2,21 @@
 
 > Según la versión publicada.
 
+#### Versión 1.1.4
+
+> **10/06/21**
+
+1.  Corrección en el manejo de productos con precios menor igual a 0.
+
+---
+
+<small>
+
 #### Versión 1.1.3
 
 > **10/06/21**
 
 1.  En aquellos productos con stock menor a 0 se establece su cantidad en 0, pero el producto no pasa a borrador.
-
----
-
-<small>
 
 #### Versión 1.1.2
 
