@@ -12,6 +12,12 @@
 
 <small>
 
+#### Versión 1.1.5
+
+> **16/06/21**
+
+1.  Corrección en el llamado al SP con un ID de depósito definido en "config.json".
+
 #### Versión 1.1.3
 
 > **10/06/21**
