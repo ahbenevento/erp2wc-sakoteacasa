@@ -2,15 +2,24 @@
 
 > Según la versión publicada.
 
+#### Versión 1.2.0
+
+> **??/08/21**
+
+1.  Envío del resumen de la importación por correo electrónico:
+    1.  Productos con stock en cero.
+    2.  Productos pasados a borrador.
+    3.  Nuevos productos.
+
+---
+
+<small>
+
 #### Versión 1.1.4
 
 > **10/06/21**
 
 1.  Corrección en el manejo de productos con precios menor igual a 0.
-
----
-
-<small>
 
 #### Versión 1.1.5
 
