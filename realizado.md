@@ -4,7 +4,7 @@
 
 #### Versión 1.2.0
 
-> **??/08/21**
+> **18/08/21**
 
 1.  Envío del resumen de la importación por correo electrónico:
     1.  Productos con stock en cero.
