@@ -2,6 +2,17 @@
 
 > Según la versión publicada.
 
+#### Versión 1.2.1
+
+> **09/09/21**
+
+1.  Corrección a los pasos desordenados de las pruebas.
+2.  Ahora es posible indicar qué pasos realizar durante las pruebas.
+
+---
+
+<small>
+
 #### Versión 1.2.0
 
 > **18/08/21**
@@ -10,10 +21,6 @@
     1.  Productos con stock en cero.
     2.  Productos pasados a borrador.
     3.  Nuevos productos.
-
----
-
-<small>
 
 #### Versión 1.1.4
 
