@@ -2,13 +2,20 @@
 
 > Según la versión publicada.
 
-## Versión 1.3.0
+## Versión 1.3.2
 
-> **04/11/221**
+> **11/11/22**
 
-1. Sincronización de etiquetas obtenidas desde el ERP hacia los productos de la tienda Web.
+1. Solucionada la sincronización de etiquetas en los productos.
+2. Nuevo opción del importador para ignorar fechas de última modificación en productos.
 
 ---
+
+### Versión 1.3.0
+
+> **04/11/22**
+
+1. Sincronización de etiquetas obtenidas desde el ERP hacia los productos de la tienda Web.
 
 ### Versión 1.2.1
 
